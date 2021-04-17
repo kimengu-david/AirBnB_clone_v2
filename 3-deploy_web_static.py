@@ -10,6 +10,7 @@ from fabric.api import env
 
 env.hosts = ["ubuntu@34.73.36.236", "ubuntu@35.231.173.232"]
 
+
 def do_deploy(archive_path):
     """Distributes an archive to a web server.
         Returns false If the file doesn't exist at
@@ -50,6 +51,7 @@ def do_deploy(archive_path):
     print("New version deployed!")
     return True
 
+
 def do_pack():
     """Create a tgz archive from web_static directory."""
     date_time = datetime.now().strftime("%Y%m%d%H%M%S")
@@ -60,6 +62,7 @@ def do_pack():
     if local("tar -cvzf {} web_static".format(archive_file)).failed is True:
         return None
     return archive_file
+
 
 def deploy():
     """Creates an archive, then distributes it to a web server."""
