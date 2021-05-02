@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-from flask import Flask
 """
 starts a Flask web application listening on any IP port 5000.
+Routes:  '/' ---Displays 'HBNB!'
+
 """
+from flask import Flask
 app = Flask(__name__)
 
 
