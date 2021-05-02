@@ -5,8 +5,10 @@ starts a Flask web application listening on any IP port 5000.
 """
 app = Flask(__name__)
 
-@app.route('/', strict_slashes = False )
+
+@app.route('/', strict_slashes=False)
 def hello():
+    """Sends the string 'Hello BNB!' to the browser"""
     return "Hello HBNB!"
 
 if __name__ == "__main__":
