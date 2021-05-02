@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-from flask import Flask
 """
 starts a Flask web application listening on any IP port 5000.
 Routes: '/' -- Returns 'Hello HBNB'
         '/hbnb' -- Returns the string 'HBNB'
         '/c/<text> -- Displays "C" ffollowed by the value of the text variable.
 """
+from flask import Flask 
 app = Flask(__name__)
 
 
