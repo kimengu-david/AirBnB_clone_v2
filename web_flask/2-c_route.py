@@ -14,10 +14,12 @@ def hello():
     """Sends the string 'Hello BNB!' to the browser"""
     return "Hello HBNB!"
 
+
 @app.route('/hbnb', strict_slashes=False)
 def hello_hbnb():
     """Returns the string "HBNB" to the browser"""
     return "HBNB"
+
 
 @app.route('/c/<text>', strict_slashes=False)
 def cisfun(text):
